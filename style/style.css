@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.table {
+    text-align: left;
+}
+
+.table-left>.table>tbody>tr>td {
+    height: 65px;
+}
+
+.table-right>.table>tbody>tr>td {
+    height: 65px;
+}
+
+/* 
+.table-left {
+    width: 30%;
+    margin-left: 12%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.table-right {
+    width: 30%;
+    margin-left: 16%;
+    margin-top: 50px;
+} */
+
+.image{
+    float: right;
+}
