@@ -17,6 +17,8 @@
 </head>
 
 <body>
+    <button id="downloadButton" class="btn btn-primary mt-5">Download PDF</button>
+
     <p>முனீஸ்வரன் துணை</p>
     <p>மணமகள் ஜாதக குறிப்பு </p>
     <img class='image' src='./Malini.png' alt='img loading'></img>
@@ -206,6 +208,20 @@
             </table>
         </div>
     </div>
+
+    <script>
+        // Function to trigger the PDF download
+        function downloadPDF() {
+            var pdfUrl = './Malini Jadhagam.pdf';
+            var link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = 'Malini Horoscope.pdf';
+            link.click();
+        }
+
+        // Attach the downloadPDF function to the button click event
+        document.getElementById('downloadButton').addEventListener('click', downloadPDF);
+    </script>
 
 </body>
 
